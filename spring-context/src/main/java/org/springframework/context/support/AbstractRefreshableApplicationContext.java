@@ -114,8 +114,8 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 
 	/**
 	 * This implementation performs an actual refresh of this context's underlying
-	 * bean factory, shutting down the previous bean factory (if any) and
-	 * initializing a fresh bean factory for the next phase of the context's lifecycle.
+	 * bean factory, shutting down the previous bean factory (if any) and。如果工厂存在，则销毁之前的工厂
+	 * initializing a fresh bean factory for the next phase of the context's lifecycle. 创建一个新的工厂。
 	 */
 	@Override
 	protected final void refreshBeanFactory() throws BeansException {
